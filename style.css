@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body { 
+    background-color: rgb(220, 172, 197);
+}
+
+nav{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(193, 72, 135);
+    padding: 23px;
+}
+
+nav li a{
+    text-decoration: none;
+    color:rgb(31, 12, 49);
+    transition:all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover
+{
+    color:rgb(205, 151, 184)
+}
+
+ 
+div.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 23px;
+    font-size: 24px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul{
+    display: flex;
+}
+
+.container{
+    min-height: 84vh;
+    font-family: 'Poppins', sans-serif;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container h1,h2{
+    margin:23px 0;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.conatiner form label{
+    font-size: 25px;
+}
+
+.container form input[type='number'],select,label{
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+}
+
+.btn{
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background:  rgb(193, 72, 135);
+    color:black;
+    border-radius: 12px;
+    cursor:pointer;
+}
+
+.output{
+    display:none;
+}
+
+.output table{
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.output table th{
+    padding:3px;
+}
+
+main {
+    padding: 2rem;
+}
+
+.about-section {
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.about-section h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  
+#contact {
+    display: flex;
+    padding: 80px;
+    border: 1px solid #1e1e1e;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: rgb(203, 175, 207);
+  }
+  
+  #contact form span {
+    padding: 20px 0;
+    font-size: 12px;
+  }
+  
+  #contact form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+  }
+  
+  #contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+  
+  #contact form input,
+  #contact form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #1e1e1e;
+  }
+  
+  #contact form button {
+    background-color: #088178;
+    color: #fff;
+  }
+
+  @media (max-width: 799px){
+    nav{
+        flex-direction: column;
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+
+    nav ul li{
+        margin:5px 13px;
+    }
+
+    .container{
+        padding:0;
+        margin-left: 0;
+        margin-right: 0;
+        width:80vw;
+        max-width: 100%;
+    }
+
+    .container form input[type='number'],select,label{
+        width:80vw;
+    }
+
+    /*contact */
+    #contact {
+        margin-left: 0px;
+        margin-right: 0px;
+        width:80vw;
+    }
+  }
+
+  @media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+      }
+
+      #header {
+        padding: 10px 30px;
+      }
+    body { 
+        background-color: rgb(220, 172, 197);
+    }
+
+    nav{
+        flex-direction: column;
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    nav ul li{
+        margin:5px 13px;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+
+    .container{
+        padding:0;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .container form input[type='number'],select,label{
+        width:80vw;
+    }
+
+    /*contact */
+    #contact {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 80vw;
+    }
+}
+
+footer{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
